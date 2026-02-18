@@ -1,0 +1,218 @@
+<index.html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Jewish Connection</title>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class="hero-section">
+            <div class="hero-container">
+                <div class="hero-image-frame">
+                    <img src="logo.png" alt="Community Festival" class="hero-community-img">
+                </div>
+
+                <div class="hero-content">
+                    <h1 class="main-header">The Jewish Connection</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="confetti-divider"></div>
+
+        <main class="container">
+            <h2 class="section-title">All Events</h2>
+            <div class="event-grid">
+                <div class="happy-card orange-border">
+                    <div class="card-content" onclick="openModal('paint-modal')">
+                        <h3>Paint Your Own Pottery</h3>
+                        <p class="event-date">March 7, 2026</p>
+                        <p class="event-time">6-9PM</p>
+                    </div>
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2021734" target="_blank"
+                        class="ticket-btn">Get Tickets 🎟️</a>
+                </div>
+
+
+                <div class="happy-card orange-border">
+                    <div class="card-content" onclick="openModal('purim-modal')">
+                        <h3>Purim Party</h3>
+                        <p class="event-date">March 8, 2026</p>
+                        <p class="event-time">11AM to 4PM</p>
+                    </div>
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2023572" target="_blank"
+                        class="ticket-btn">Get Tickets 🎟️</a>
+                </div>
+
+                <div class="happy-card orange-border">
+                    <div class="card-content" onclick="openModal('mimouna-modal')">
+                        <h3>Mimouna Celebration</h3>
+                        <p class="event-date">April 9, 2026</p>
+                        <p class="event-time">7-10:30PM</p>
+                    </div>
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2004490" target="_blank"
+                        class="ticket-btn">Get Tickets 🎟️</a>
+                </div>
+
+                <div class="happy-card orange-border">
+                    <div class="card-content" onclick="openModal('zikaron-modal')">
+                        <h3>Zikaron B'asalon</h3>
+                        <p class="event-date">April 13, 2026</p>
+                        <p class="event-time">6-7:30PM</p>
+                    </div>
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2074822" target="_blank"
+                        class="ticket-btn">Get Tickets 🎟️</a>
+                </div>
+            </div>
+        </main>
+
+        <div id="paint-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('paint-modal')">&times;</button>
+                <h2 class="modal-title">Paint Your Own Pottery</h2>
+                <div class="modal-body">
+                    <p>Unwind with an evening of pottery painting in good company. Select your favorite ceramic piece
+                        upon arrival and bring your artistic vision to life in a relaxed, adults-only atmosphere.
+                    </p>
+                    <b>
+                        <p>
+                            Ages: 21+
+                        </p>
+                    </b>
+                    <b>
+                        <p>
+                            Cost: $10 admission fee (Pottery items purchased separately)
+                        </p>
+                    </b>
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2021734" target="_blank"
+                        class="ticket-btn-large">Secure Your Tickets!</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="purim-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('purim-modal')">&times;</button>
+                <h2 class="modal-title">Purim Celebration</h2>
+                <div class="modal-body">
+                    <p>It's the happiest day of the year and we're celebrating with good vibes, great music, and plenty
+                        of alcohol to keep the spirits high!
+                        A celebration for the whole family!
+                    </p>
+                    <b>
+                        <p>
+                            Cost: $15 Early Bird- General Admission fee (until February 28th at midnight)
+                        </p>
+                    </b>
+                    <b>
+                        <p>
+                            $25 General Admission fee (until March 7th at midnight)
+                        </p>
+                    </b>
+                    <b>
+                        <p>
+                            $10 Kid General Admission fee (ages 2-12 )
+                        </p>
+                    </b>
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2021734" target="_blank"
+                        class="ticket-btn-large">Secure Your Tickets!</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mimouna-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('mimouna-modal')">&times;</button>
+                <h2 class="modal-title">Mimouna Celebration</h2>
+                <div class="modal-body">
+                    <p>Break your Passover routine with a feast for the senses. The Jewish Connection invites you to a
+                        vibrant Mimouna celebration in San Francisco. Immerse yourself in the "Maghrebi Warmth" of the
+                        holiday with traditional Moroccan pastries, hot tea, and the star of the show: fresh mufleta.
+                        Grab your ticket now for a night of culture, community, and delicious chametz.
+                    </p>
+                    <b>
+                        <p>
+                            Cost: $18 early bird- general admission fee (until March 19th at midnight)
+                        </p>
+                    </b>
+                    <b>
+                        <p>
+                            $25 general admission fee (until April 8th at midnight)
+                        </p>
+                    </b>
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2004490" target="_blank"
+                        class="ticket-btn-large">Secure Your Tickets!</a>
+                </div>
+            </div>
+        </div>
+        <div id="zikaron-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('zikaron-modal')">&times;</button>
+                <h2 class="modal-title">Zikaron B'asalon</h2>
+                <div class="modal-body">
+                    <p>Join us for an evening to commemorate Holocaust Remembrance Day with Zikarin B'asalon. An evening
+                        of story telling by Uzi Levin. It is important to remember, never forget, and to pass these
+                        stories on.
+                    </p>
+                    <b>
+                        <p>
+                            Language: English
+                        </p>
+                    </b>
+                    <b>
+                        <p>
+                            Cost: free
+                        </p>
+                    </b>
+
+                    <a href="https://www.tickettailor.com/events/thejewishconnection/2074822" target="_blank"
+                        class="ticket-btn-large">Secure Your Tickets!</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openModal(modalId) {
+                document.getElementById(modalId).style.display = "flex";
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeModal(modalId) {
+                document.getElementById(modalId).style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+
+            window.onclick = function (event) {
+                if (event.target.className === 'modal-overlay') {
+                    event.target.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            }
+        </script>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-card">
+                    <h2 class="section-title" style="text-align: center;">Contact Us</h2>
+                    <p class="contact-text">Have questions about our events or want to collaborate?</p>
+                    <a href="mailto:sfisraelies@gmail.com" class="ticket-btn">Send us an Email</a>
+                    <div class="contact-socials">
+                        <a href="https://www.facebook.com/groups/1119349039492268/" target="_blank"
+                            class="facebook-link">Join our Facebook Group ➔</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ for the SF Community</p>
+        </footer>
+    </body>
+
+    </html>

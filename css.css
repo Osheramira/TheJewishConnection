@@ -1,0 +1,374 @@
+/* Color Palette */
+:root {
+    /* Updated to a soft pastel peach/orange */
+    --happy-orange: #FFB386; 
+    --happy-green: #5D8C7E;
+    --happy-cream: #FAF3E0;
+    --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--happy-cream);
+    color: #333;
+}
+
+/* Hero Layout */
+/* Center the entire header area */
+.hero-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center;
+}
+
+.centered-header-container {
+    display: flex;
+    flex-direction: column; /* Stack logo on top of text */
+    align-items: center;    /* Center them horizontally */
+    gap: 20px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row; /* Side-by-side */
+    align-items: center; /* Vertical alignment */
+    gap: 40px;           /* Space between logo and text */
+    max-width: 1100px;
+}
+
+.hero-image-frame {
+    background-color: var(--happy-orange);
+    width: 300px; 
+    height: 300px; 
+    border-radius: 60px; 
+    flex-shrink: 0; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden; 
+    
+    /* Using Grid to force exact geometric centering */
+    display: grid;
+    place-items: center;
+}
+
+.hero-community-img {
+    width: 85%;      
+    height: 85%;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: none; 
+    
+    /* Removes any potential inline spacing issues */
+    display: block;
+}
+
+.main-logo {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-image-frame {
+    background-color: var(--happy-orange);
+    width: 350px;  /* Made it slightly bigger as requested */
+    height: 350px; 
+    border-radius: 80px; /* Rounded square outer frame */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden; /* This keeps the image from spilling out of the frame */
+}
+
+.main-header {
+    font-family: 'Anton', sans-serif; 
+    font-size: 5rem;
+    color: #966fb4;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-header {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+/* Event Cards */
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+.section-title {
+    font-family: 'Anton', sans-serif; 
+    /* Reduced from 4rem to 2.8rem for a smaller look */
+    font-size: 2.8rem;             
+    color: #966fb4;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: left;
+    /* Reduced margin to keep it close to the events */
+    margin-bottom: 25px; 
+}
+
+.event-grid {
+    display: grid;
+    /* This creates 3 columns on desktop and 1 on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 30px;
+    align-items: stretch; /* Ensures all cards in a row are the same height */
+}
+
+.happy-card {
+    background: #FFFBF0 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03); /* Soft shadow */
+    transition: all 0.3s ease;
+    padding: 25px; /* Reduced from 40px */
+    border-radius: 40px;
+    text-align: center;
+    position: relative;
+    border: 3px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px; /* Reduced from 400px to make them shorter */
+}
+
+.happy-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    border-color: #966fb4;; 
+}
+
+.card-content {
+    flex-grow: 1; /* Takes up all available space above the button */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically in the available space */
+    margin-bottom: 20px; /* Consistent space between text and button */
+}
+
+
+.event-date {
+    font-weight: 700;
+    color: black; 
+    font-size: 1.1rem;
+}
+
+.event-time {
+    color: black; 
+    font-size: 0.95rem;
+}
+
+.orange-border { border: 3px solid var(--happy-orange); }
+
+.happy-card h3 {
+    font-family: 'Archivo Narrow', sans-serif !important;
+    font-weight: 700;
+    color: #966fb4;;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: none;
+    line-height: 1.1;
+}
+
+.status {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-weight: bold;
+    color: var(--happy-orange);
+    font-size: 0.8rem;
+}
+
+/* Ticket Buttons */
+.ticket-btn {
+   background: linear-gradient(135deg, #FFB386 0%, #E59A6D 100%);
+    border: none;
+    box-shadow: 0 4px 0px #C77D52;
+    align-self: center;
+    background-color: var(--happy-orange);
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+
+.ticket-btn-large {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--happy-orange);
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 40px;
+    
+    /* Font Change */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    box-shadow: 0 6px 0px #E59A6D; 
+    transition: all 0.2s;
+}
+
+.ticket-btn:hover {
+    transform: translateY(-3px);
+    /* Update the hover shadow as well to match */
+    box-shadow: 0 8px 0px #E59A6D; 
+}
+
+.ticket-btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0px #E59A6D;
+}
+
+/* Pop-up (Modal) Logic */
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999; 
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    background-color: var(--happy-cream) !important;
+    padding: 50px;
+    border-radius: 50px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    border: 5px solid var(--happy-orange);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    z-index: 10000;
+    text-align: left;
+    animation: popIn 0.3s ease-out;
+}
+
+.modal-title {
+    font-family: 'Archivo Narrow', sans-serif !important;
+    font-weight: 700;
+    color: #966fb4;;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Matching the condensed look */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: var(--happy-orange);
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+footer {
+    text-align: center;
+    padding: 20px; /* Reduced from 60px to pull it closer to the box */
+    color: #777;
+    background-color: var(--soft-cream);
+    margin-top: 0; /* Ensures no gap between the box and the footer */
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .hero-container { flex-direction: column; text-align: center; }
+    .hero-image-frame { width: 300px; height: 300px; border-radius: 50px; }
+    .main-header { font-size: 2.5rem; }
+}
+
+@font-face {
+    font-family: 'TT Trailers';
+    src: url('fonts/TT-Trailers-black.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.contact-section {
+    padding: 20px 0 0 0;
+    background-color: var(--soft-cream);
+    width: 100%;
+    
+    /* ADD THIS LINE: Increases space between cards and the box */
+    margin-top: 80px; 
+}
+.contact-card {
+    background: #F8F1E4;
+    padding: 20px 20px;
+    text-align: center;
+    border-top: 3px solid var(--happy-orange);
+    border-bottom: 3px solid var(--happy-orange);
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+}
+
+.contact-card .ticket-btn {
+    padding: 8px 25px; /* Reduced from 12px 35px */
+    font-size: 1rem;    /* Slightly smaller font */
+    box-shadow: 0 4px 0px #E59A6D; /* Shallower shadow for a smaller button */
+}
+
+.contact-text {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem; /* Slightly smaller font to save space */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #333;
+}
+
+.contact-socials {
+    margin-top: 25px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    color: var(--happy-green);
+}
+
+.facebook-link {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    color: var(--happy-green);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.2s;
+}
+
+.facebook-link:hover {
+    color: var(--happy-orange);
+    text-decoration: underline;
+}
