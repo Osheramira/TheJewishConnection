@@ -372,3 +372,20 @@ footer {
     color: var(--happy-orange);
     text-decoration: underline;
 }
+
+
+.instagram-link {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    color: var(--happy-green);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.2s;
+}
+
+.instagram-link:hover {
+    color: var(--happy-orange);
+    text-decoration: underline;
+}
