@@ -69,9 +69,9 @@
                     <a href="https://www.tickettailor.com/events/thejewishconnection/2074822" target="_blank"
                         class="ticket-btn">Get Tickets 🎟️</a>
                 </div>
-                
+
                 <div class="happy-card orange-border">
-                    <div class="card-content" onclick="openModal('paint-modal')">
+                    <div class="card-content" onclick="openModal('pottery-modal')">
                         <h3>Paint Your Own Pottery</h3>
                         <p class="event-date">May 17, 2026</p>
                         <p class="event-time">7-9PM</p>
@@ -203,10 +203,11 @@
                         class="ticket-btn-large">Secure Your Tickets!</a>
                 </div>
             </div>
+        </div>
 
-            <div id="paint-modal" class="modal-overlay">
+        <div id="pottery-modal" class="modal-overlay">
             <div class="modal-content">
-                <button class="close-btn" onclick="closeModal('paint-modal')">&times;</button>
+                <button class="close-btn" onclick="closeModal('pottery-modal')">&times;</button>
                 <h2 class="modal-title">Paint Your Own Pottery</h2>
                 <div class="modal-body">
                     <p>Unwind with an evening of pottery painting in good company. Select your favorite ceramic piece
@@ -214,7 +215,7 @@
                     </p>
                     <br>
                     <p>
-                        Ages: no age limits
+                        Ages: no age limit
                     </p>
                     <br>
                     <p>
@@ -225,7 +226,6 @@
                         class="ticket-btn-large">Secure Your Tickets!</a>
                 </div>
             </div>
-        </div>
         </div>
 
         <script>
@@ -256,12 +256,44 @@
                         <a href="https://www.instagram.com/thejewishconnection?igsh=MTFzcWd3ODkydDRjcg%3D%3D&utm_source=qr"
                             target="_blank" class="instagram-link">Join our Instagram Group</a>
                         <br>
-                            <a href="https://www.facebook.com/groups/1119349039492268/" target="_blank"
+                        <a href="https://www.facebook.com/groups/1119349039492268/" target="_blank"
                             class="facebook-link">Join our Facebook Group</a>
                     </div>
                 </div>
         </section>
 
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="ticket-btn" onclick="openModal('policy-modal')"
+                style="background-color: transparent; border: 2px solid #555; color: #555; padding: 10px 20px;">
+                Cancellation & Refund Policy | מדיניות החזרים וביטולים
+            </button>
+        </div>
+
+        <div id="policy-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal('policy-modal')">&times;</button>
+                <h2 class="modal-title">Cancellation & Refund Policy</h2>
+                <div class="modal-body" style="text-align: left; line-height: 1.6;">
+                    <p><strong>🎟️ Cancellation & Refund Policy</strong></p>
+                    <p>All ticket sales are final.</p>
+                    <p>Refunds or exchanges will only be issued if the event is canceled or rescheduled.</p>
+                    <p>If you are unable to attend, you are welcome to transfer your ticket to someone else.</p>
+                    <p>Please double-check the event location, date, and time before completing your purchase.</p>
+                    <p>Thank you for your understanding!</p>
+
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+
+                    <div style="direction: rtl; text-align: right;">
+                        <p><strong>מדיניות ביטול והחזרים 🎟️</strong></p>
+                        <p>כל המכירות הן סופיות.</p>
+                        <p>החזר כספי או החלפה יתאפשרו רק במקרה של ביטול או דחייה של האירוע.</p>
+                        <p>אם אינך יכול/ה להגיע – ניתן להעביר את הכרטיס לאדם אחר.</p>
+                        <p>אנא בדקו את מיקום, תאריך ושעת האירוע לפני השלמת הרכישה.</p>
+                        <p>תודה על ההבנה!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <p>Made with ❤️ for the SF Community</p>
         </footer>
